@@ -23,6 +23,7 @@ Gestion des problèmes et leurs solutions.
 Gestion des utilisateurs:
 Confirmation de la création d’un nouveau compte user en envoyant un email à l’utilisateur  contenant un username et un mot de passe.
 Envoyer un message de clarification des problèmes à l’utilisateur.
+
 Partie user:
 S’inscrire.
 S’identifier.
