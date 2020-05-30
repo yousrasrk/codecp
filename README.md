@@ -6,7 +6,7 @@ Exemple d'un site qui heberge des problemes de competitions
 https://codeforces.com/problemset
 
 2.Définition de projet :
-   Dans tous les groupes de formation de compétitive programming on constate la difficulté de superviser la progression des programmeurs. Par conséquent on se trouve obligé d’utiliser Excel pour suivre les programmeurs. Pour faciliter cette tâche on a décidé de créer CodeCp.
+
    CodeCp est une application desktop  qui héberge des compétitions de programmation, il permet aux utilisateurs de pratiquer et d’apprendre différentes techniques et algorithmes utiles.
    Il permet à l’admin de concevoir des problèmes à résoudre et aussi le suivi de l'amélioration du niveau des utilisateurs .
 
