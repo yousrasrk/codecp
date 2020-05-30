@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1103.0" style="-fx-border-color: #2448D5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Controller.Layout_adminController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="109.0" prefHeight="589.0" prefWidth="304.0" style="-fx-background-color: #0747A8;" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="108.0">
+         <children>
+            <GridPane layoutX="13.899999618530273" layoutY="36.0" prefHeight="525.0" prefWidth="265.0" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="36.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="140.5" minHeight="10.0" prefHeight="54.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="148.5" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="176.0" minHeight="10.0" prefHeight="81.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="131.5" minHeight="10.0" prefHeight="65.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.5" minHeight="10.0" prefHeight="99.5" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="100.5" minHeight="10.0" prefHeight="99.5" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Dashboard" prefHeight="61.0" prefWidth="260.0" style="-fx-background-color: #0747A8;" text="Dashboard" textFill="WHITE">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button mnemonicParsing="false" onAction="#Probleme" prefHeight="67.0" prefWidth="278.0" style="-fx-background-color: #0747A8;" text="Problèmes" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <ImageView fitHeight="41.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../images/prob.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#Competitions" prefHeight="67.0" prefWidth="265.0" style="-fx-background-color: #0747A8;" text="Compétitions" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <ImageView fitHeight="41.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                     <image>
+                        <Image url="@../../images/com.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/dashboardByet.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#Utilisateurs" prefHeight="57.0" prefWidth="275.0" style="-fx-background-color: #0747A8;" text="Utilisateurs" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <ImageView fitHeight="41.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3">
+                     <image>
+                        <Image url="@../../images/user.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#Messages" prefHeight="63.0" prefWidth="279.0" style="-fx-background-color: #0747A8;" text="Messages" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <ImageView fitHeight="41.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="4">
+                     <image>
+                        <Image url="@../../images/msg.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#Submitions" prefHeight="63.0" prefWidth="279.0" style="-fx-background-color: #0747A8;" text="Essais" textFill="WHITE" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="41.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="41.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="5">
+                     <image>
+                        <Image url="@../../images/sub.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <AnchorPane layoutX="9.0" layoutY="3.0" prefHeight="701.0" prefWidth="23.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="-6.0" style="-fx-background-color: #000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="116.0" prefWidth="1103.0" style="-fx-background-color: #F8F8FF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="106.0" fitWidth="147.0" layoutX="35.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="4.0">
+                     <image>
+                        <Image url="@../../images/logoBleu.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="971.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="31.0">
+                     <image>
+                        <Image url="@../../images/logout.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="973.0" layoutY="29.0" mnemonicParsing="false" onAction="#logout" prefHeight="55.0" prefWidth="52.0" style="-fx-background-color: none;" AnchorPane.bottomAnchor="32.0" AnchorPane.rightAnchor="76.0" AnchorPane.topAnchor="29.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="rootPane" layoutX="298.0" layoutY="120.0" prefHeight="576.0" prefWidth="806.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="297.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="119.0">
+         <children>
+            <AnchorPane layoutX="29.0" layoutY="27.0" prefHeight="525.0" prefWidth="748.0" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="27.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   
+   
+
+</AnchorPane>

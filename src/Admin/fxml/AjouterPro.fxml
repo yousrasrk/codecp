@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="835.0" style="-fx-border-color: #2448D5;" stylesheets="@../../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Controller.AjoutProblm">
+   <children>
+      <BorderPane prefHeight="581.0" prefWidth="835.0">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Pane prefHeight="96.0" prefWidth="840.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="225.0" layoutY="37.0" prefHeight="39.0" prefWidth="440.0" text="Ajouter un nouveau problème " textFill="#171474">
+                           <font>
+                              <Font name="Bell MT" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </top>
+               <center>
+                  <Pane prefHeight="485.0" prefWidth="766.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button fx:id="Enregistrer" layoutX="141.0" layoutY="397.0" mnemonicParsing="false" onAction="#EnregistrerDef" prefHeight="40.0" prefWidth="116.0" style="-fx-background-color: #61c566;" text="Enregister" textFill="WHITE">
+                           <font>
+                              <Font name="Bell MT" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Annuler" layoutX="362.0" layoutY="397.0" mnemonicParsing="false" onAction="#Annuler" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #e44646;" text="Annuler" textFill="WHITE">
+                           <font>
+                              <Font name="Bell MT" size="18.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="199.0" layoutY="45.0" prefHeight="288.0" prefWidth="273.0" spacing="30.0">
+                           <children>
+                              <TextField fx:id="Titre" prefHeight="45.0" prefWidth="330.0" style="-fx-background-radius: 0 0 0 0; -fx-background-color: #F0F8FF;">
+                                 <VBox.margin>
+                                    <Insets bottom="-25.0" />
+                                 </VBox.margin></TextField>
+                              <Line endX="165.7928924560547" endY="0.8284156918525696" startX="-100.0" />
+                              <TextField fx:id="Niveau" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="330.0" style="-fx-background-radius: 0 0 0 0; -fx-background-color: #F0F8FF;">
+                                 <VBox.margin>
+                                    <Insets bottom="-25.0" />
+                                 </VBox.margin></TextField>
+                              <Line endX="165.7928924560547" endY="0.8284156918525696" startX="-100.0" />
+                              <Button fx:id="Test" maxHeight="39.0" mnemonicParsing="false" onAction="#AjoutPrblm" prefHeight="34.0" prefWidth="198.0" style="-fx-background-radius: 30 30 30 30; -fx-background-color: #708090;" stylesheets="@../../css/login.css" text="Ajouter un fichier" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bell MT" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="Prblm" maxHeight="39.0" mnemonicParsing="false" onAction="#AjoutSol" prefHeight="34.0" prefWidth="199.0" style="-fx-background-radius: 30 30 30 30; -fx-background-color: #708090;" stylesheets="@../css/login.css" text="Ajouter un fichier" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bell MT" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="Sol" maxHeight="39.0" mnemonicParsing="false" onAction="#AjoutTest" prefHeight="34.0" prefWidth="194.0" style="-fx-background-radius: 30 30 30 30; -fx-background-color: #708090;" stylesheets="@../css/login.css" text="Ajouter un fichier" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bell MT" size="18.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="30.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="27.0" layoutY="45.0" prefHeight="292.0" prefWidth="169.0" spacing="25.0">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="170.0" text="Titre        :    " textFill="#171474">
+                                 <font>
+                                    <Font name="Bell MT" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="148.0" text="Niveau     : " textFill="#171474">
+                                 <font>
+                                    <Font name="Bell MT" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="154.0" text="Problème :" textFill="#171474">
+                                 <font>
+                                    <Font name="Bell MT" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="52.0" prefHeight="41.0" prefWidth="153.0" text="Solution   :" textFill="#171474">
+                                 <font>
+                                    <Font name="Bell MT" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="136.0" prefHeight="41.0" prefWidth="174.0" text="Test case  :" textFill="#171474">
+                                 <font>
+                                    <Font name="Bell MT" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </center>
+               <left>
+                  <Pane prefHeight="485.0" prefWidth="119.0" BorderPane.alignment="CENTER" />
+               </left></BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+
+
+
+</AnchorPane>

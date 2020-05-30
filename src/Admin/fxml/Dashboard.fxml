@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="692.0" prefWidth="896.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Admin.Controller.DashboardController">
+   <children>
+      <GridPane prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TabPane prefHeight="488.0" prefWidth="687.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Utilisateurs">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="651.0" prefWidth="896.0">
+                           <children>
+                              <VBox layoutX="483.0" layoutY="23.0" prefHeight="282.0" prefWidth="363.0" AnchorPane.bottomAnchor="342.0" AnchorPane.leftAnchor="483.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="23.0" />
+                              <GridPane layoutX="-1.0" prefHeight="388.0" prefWidth="896.0" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="180.5" minHeight="10.0" prefHeight="132.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="238.0" minHeight="10.0" prefHeight="238.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <VBox prefHeight="53.0" prefWidth="448.0">
+                                       <children>
+                                          <Label prefHeight="44.0" prefWidth="247.0" text="Nombre d'utilisateurs :">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Line endX="100.0" startX="-100.0" stroke="#17bfa3" strokeWidth="5.0">
+                                             <VBox.margin>
+                                                <Insets left="10.0" />
+                                             </VBox.margin>
+                                          </Line>
+                                          <Label fx:id="NbreUsers" alignment="CENTER" prefHeight="39.0" prefWidth="228.0" textFill="#17bfa3">
+                                             <font>
+                                                <Font size="36.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets bottom="20.0" top="20.0" />
+                                       </GridPane.margin>
+                                    </VBox>
+                                    <VBox prefHeight="132.0" prefWidth="281.0" GridPane.columnIndex="1">
+                                       <children>
+                                          <Label>
+                                             <VBox.margin>
+                                                <Insets top="50.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children></VBox>
+                                    <VBox prefHeight="274.0" prefWidth="448.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <Label prefHeight="44.0" prefWidth="247.0" text="Les  4 derniers utilisateurs:">
+                                             <VBox.margin>
+                                                <Insets left="10.0" top="20.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Line endX="100.0" startX="-100.0" stroke="#bc1874" strokeWidth="5.0">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="10.0" />
+                                             </VBox.margin>
+                                          </Line>
+                                          <GridPane prefHeight="224.0" prefWidth="448.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="115.0" minHeight="10.0" prefHeight="99.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <VBox prefHeight="76.0" prefWidth="224.0">
+                                                   <children>
+                                                      <Label fx:id="name1" alignment="CENTER" prefHeight="44.0" prefWidth="224.0" text="name1">
+                                                         <padding>
+                                                            <Insets top="20.0" />
+                                                         </padding></Label>
+                                                      <Label fx:id="SubUser1" alignment="CENTER" prefHeight="45.0" prefWidth="226.0" text="nombre" textFill="#bc1874" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Label fx:id="name2" alignment="CENTER" prefHeight="45.0" prefWidth="226.0" text="name2">
+                                                         <padding>
+                                                            <Insets top="20.0" />
+                                                         </padding></Label>
+                                                      <Label fx:id="SubUser2" alignment="CENTER" prefHeight="44.0" prefWidth="232.0" text="nombre" textFill="#bc1874" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="name3" alignment="CENTER" prefHeight="43.0" prefWidth="226.0" text="name3">
+                                                         <padding>
+                                                            <Insets top="5.0" />
+                                                         </padding></Label>
+                                                      <Label fx:id="SubUser3" alignment="CENTER" prefHeight="45.0" prefWidth="225.0" text="nombre" textFill="#bc1874" />
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="20.0" />
+                                                   </padding>
+                                                   <GridPane.margin>
+                                                      <Insets top="5.0" />
+                                                   </GridPane.margin>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="name4" alignment="CENTER" prefHeight="43.0" prefWidth="240.0" text="name4">
+                                                         <padding>
+                                                            <Insets top="5.0" />
+                                                         </padding></Label>
+                                                      <Label fx:id="SubUser4" alignment="CENTER" prefHeight="45.0" prefWidth="232.0" text="nombre" textFill="#bc1874" />
+                                                   </children>
+                                                   <GridPane.margin>
+                                                      <Insets top="20.0" />
+                                                   </GridPane.margin>
+                                                </VBox>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </VBox>
+                                    <BarChart fx:id="Graph" title="Nombre des problémes  par niveau" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                      <xAxis>
+                                        <CategoryAxis fx:id="XAxis" side="BOTTOM" />
+                                      </xAxis>
+                                      <yAxis>
+                                        <NumberAxis fx:id="YAxis" side="LEFT" />
+                                      </yAxis>
+                                    </BarChart>
+                                 </children>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </GridPane>
+                              <TableView fx:id="tableView" layoutX="56.0" layoutY="341.0" prefHeight="222.0" prefWidth="785.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="55.0">
+                                <columns>
+                                  <TableColumn fx:id="Username" prefWidth="191.0" text="Username" />
+                                    <TableColumn fx:id="Date" prefWidth="191.0" text="Date" />
+                                    <TableColumn fx:id="Resultat" minWidth="0.0" prefWidth="174.0" text="Résultat" />
+                                  <TableColumn fx:id="Probleme" prefWidth="228.0" text="Problème" />
+                                </columns>
+                                 <padding>
+                                    <Insets top="10.0" />
+                                 </padding>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/dashboard.css" />
+      <URL value="@../../css/login.css" />
+   </stylesheets>
+</AnchorPane>
