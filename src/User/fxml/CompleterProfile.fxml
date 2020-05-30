@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="900.0" style="-fx-background-color: #fff;" stylesheets="@../../css/login.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.ModifierProfileController">
+   <children>
+      <AnchorPane AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="242.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Merci de completer Votre profil" textFill="#171474" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Bell MT" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="23.0" prefHeight="521.0" prefWidth="863.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <GridPane layoutY="67.0" AnchorPane.bottomAnchor="98.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="67.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <AnchorPane>
+                     <children>
+                        <GridPane layoutX="6.0" layoutY="14.0" prefHeight="388.0" prefWidth="425.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                            <ColumnConstraints hgrow="SOMETIMES" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="219.0" minHeight="10.0" prefHeight="219.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="82.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="177.0" text="Email               :" textFill="#171474" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="40.0" prefWidth="177.0" text="Téléphone        :" textFill="#171474" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="40.0" prefWidth="177.0" text="Photo              :" textFill="#171474">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <ImageView fitHeight="129.0" fitWidth="269.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../images/logoBleu.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button contentDisplay="CENTER" mnemonicParsing="false" style="-fx-background-color: black; -fx-background-radius: 30;" text="Ajouter une photo" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <TextFlow style="-fx-background-color: #F7F9FB;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextFlow style="-fx-background-color: #F7F9FB;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane GridPane.columnIndex="1">
+                     <children>
+                        <GridPane prefHeight="356.0" prefWidth="371.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.0" minWidth="155.0" prefWidth="192.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="41.0" minHeight="36.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="26.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="175.0" text="Username         :" textFill="#171474">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="43.0" prefWidth="183.0" text="Nom                 :" textFill="#171474" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="43.0" prefWidth="183.0" text="Prenom            :" textFill="#171474" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="40.0" prefWidth="177.0" text="Password         :" textFill="#171474" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="172.0" text="Langage préfèré :" textFill="#171474" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <TextFlow style="-fx-background-color: #F7F9FB;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextFlow style="-fx-background-color: #F7F9FB;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                              <TextFlow style="-fx-background-color: #F7F9FB;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextFlow style="-fx-background-color: #F7F9FB;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextFlow style="-fx-background-color: #F7F9FB;" GridPane.columnIndex="1" />
+                              <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Line endX="100.0" startX="-100.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <TextFlow layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="218.0" />
+            <GridPane layoutX="329.0" layoutY="501.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="242.0" AnchorPane.rightAnchor="261.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#AnnulerModification" prefHeight="39.0" prefWidth="105.0" style="-fx-background-color: #e44646;" text="Annuler" textAlignment="JUSTIFY" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Bell MT" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#EnregistrerModification" style="-fx-background-color: #61c566;" text="Enregistrer" textFill="WHITE">
+                     <font>
+                        <Font name="Bell MT" size="20.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+   
+   
+
+</AnchorPane>

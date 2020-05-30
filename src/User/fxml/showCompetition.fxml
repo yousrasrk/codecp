@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User.Controller.showController">
+   <children>
+      <GridPane prefHeight="581.0" prefWidth="835.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="566.0" prefWidth="835.0">
+               <children>
+                  <Label layoutX="80.0" layoutY="14.0" prefHeight="66.0" prefWidth="435.0" text="Détail de la compétition:" textFill="#171474" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="320.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="80.0" layoutY="62.0" prefHeight="8.0" prefWidth="270.0" style="-fx-background-color: #0747A8; -fx-background-radius: 10;" AnchorPane.leftAnchor="80.0" />
+                  <Button fx:id="buttonParticiper" layoutX="495.0" layoutY="529.0" mnemonicParsing="false" onAction="#Participer" prefHeight="33.0" prefWidth="134.0" style="-fx-background-color: #61c566;" text="Participer" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="206.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <GridPane layoutX="46.0" layoutY="111.0" prefHeight="394.0" prefWidth="380.0" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="409.0" AnchorPane.topAnchor="111.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="108.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="453.0" minWidth="10.0" prefWidth="272.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="71.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="101.0" minHeight="3.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="101.0" minHeight="10.0" prefHeight="77.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="175.0" text="Titre">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Titre" prefHeight="31.0" prefWidth="200.0" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="171.0" text="Niveau " GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Niveau" prefHeight="31.0" prefWidth="208.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="188.0" text="Date début" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DateFin" prefHeight="31.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="174.0" text="Date fin" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DateDebut" prefHeight="31.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="NParticipant" prefHeight="31.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="180.0" text="N° de participant" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <TableView fx:id="listeProbleme" layoutX="456.0" layoutY="118.0" prefHeight="368.0" prefWidth="345.0" AnchorPane.leftAnchor="456.0" AnchorPane.rightAnchor="34.0">
+                    <columns>
+                      <TableColumn fx:id="Probleme" prefWidth="175.0" text="Problème" />
+                      <TableColumn fx:id="NiveauPro" prefWidth="175.0" text="Niveau" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="269.0" layoutY="529.0" mnemonicParsing="false" onAction="#Rank" prefHeight="38.0" prefWidth="140.0" style="-fx-background-color: #708090;" text="Rang" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/login.css" />
+      <URL value="@../../css/login.css" />
+   </stylesheets>
+   
+   
+
+</AnchorPane>
